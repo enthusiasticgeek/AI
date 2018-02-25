@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+#Author: Pratik M Tambe <enthusiasticgeek@gmail.com>
+#Converted the following article code to Python
 #https://www.codeproject.com/Articles/16286/AI-Simple-Genetic-Algorithm-GA-to-solve-a-card-pro
 #Well, GAs can be used to solve many problems. In fact, GAs have been used to grow new mathematical syntax trees, train multi-layer neural networks, to name but a few instances.
 #
