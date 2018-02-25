@@ -1,2 +1,2 @@
 # AI
-AI programs
+AI programs - mostly written in Python
