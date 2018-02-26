@@ -132,7 +132,7 @@ class MicrobialGeneticAlgorithm(object):
                     #maybe do some recombination
                     if random.uniform(0.0, 1.0) < self.REC:
                         self.gene[Loser][i] = self.gene[Winner][i]
-                    #maybe do some muttion
+                    #maybe do some mutation
                     if random.uniform(0.0, 1.0) < self.MUT:
                         self.gene[Loser][i] = 1 - self.gene[Loser][i]
                     #then test to see if the new population member is a winner
