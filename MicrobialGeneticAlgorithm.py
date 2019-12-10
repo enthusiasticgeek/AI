@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #Author: Pratik M Tambe <enthusiasticgeek@gmail.com>
 #Converted the following article code to Python
@@ -17,11 +17,11 @@ import random
 import math
 
 class MicrobialGeneticAlgorithm(object):
-	"""
-		blueprint Microbial Genetic Algorithm - Card Problem
-	"""
+        """
+                blueprint Microbial Genetic Algorithm - Card Problem
+        """
 
-	def __init__(self):
+        def __init__(self):
 
                 #population
                 self.POP = 30
@@ -41,11 +41,12 @@ class MicrobialGeneticAlgorithm(object):
                 self.PRODTARG = 360
                 #the genes array, 30 members, 10 cards each
                 self.gene = [[0 for x in range(self.LEN)] for y in range(self.POP)] 
+                #print(self.gene)
                 #used to create randomness (Simulates selection process in nature)
                 #randomly selects genes
 
         #initialize population iterating over 30 members sets and 10 cards each set
-	def init_pop(self):
+        def init_pop(self):
                 for i in range(len(self.gene)):
                     for j in range(len(self.gene[i])):
                         #print self.gene[i][j]
@@ -54,15 +55,15 @@ class MicrobialGeneticAlgorithm(object):
                         else:
                            self.gene[i][j]=1
 
-	def display_pop(self):
-		print("populating gene")
+        def display_pop(self):
+                print("populating gene")
                 for i in range(len(self.gene)):
                     for j in range(len(self.gene[i])):
-                        print self.gene[i][j]
+                        print(self.gene[i][j])
 
-	def print_pop(self):
+        def print_pop(self):
             for i in range(len(self.gene)):
-                print self.gene[i]          
+                print(self.gene[i])          
 
 
         #evaluate the the nth member of the population
@@ -91,8 +92,8 @@ class MicrobialGeneticAlgorithm(object):
             #work out how food this population member is, based on an overall error
             #for the problem domain
             #NOTE : The fitness function will change for every problem domain.
-            scaled_sum_error = (sum - self.SUMTARG) / self.SUMTARG
-            scaled_prod_error = (prod - self.PRODTARG) / self.PRODTARG
+            scaled_sum_error = math.floor( (sum - self.SUMTARG) / self.SUMTARG )
+            scaled_prod_error = math.floor( (prod - self.PRODTARG) / self.PRODTARG )
             combined_error = math.fabs(scaled_sum_error) + math.fabs(scaled_prod_error)
 
             return combined_error
@@ -138,6 +139,8 @@ class MicrobialGeneticAlgorithm(object):
                     #then test to see if the new population member is a winner
                     if self.evaluate(Loser) == 0.0:
                         self.display(tournamentNo, Loser)
+                    #else:
+                    #    print('No winner found!')
 
 
         #Display the results. Only called for good GA which has solved
@@ -158,3 +161,4 @@ class MicrobialGeneticAlgorithm(object):
 
 mga = MicrobialGeneticAlgorithm()
 mga.run()
+sys.exit()
