@@ -7,28 +7,28 @@ https://www.tutorialspoint.com/artificial_intelligence_with_python/artificial_in
 
 ## Packages (Ubuntu 18.04 LTS) :
 
-sudo apt install python3 python3-pip  python3-opencv
-sudo pip3 install numpy sklearn
-sudo pip3 install pandas matplotlib
-sudo pip3 install pydotplus
-sudo pip3 install kanren sympy
-sudo pip3 install seaborn
-sudo pip3 install nltk
-sudo pip3 install gensim
-sudo pip3 install pattern
-sudo apt-get install mysql-server
-sudo apt-get install libmysqlclient-dev
-sudo apt-get install libmariadbclient-dev
-sudo pip3 install pattern
-sudo pip3 install hmmlearn
-sudo pip3 install pystruct
-sudo pip3 install cvxopt
-sudo pip3 install python_speech_features
-sudo pip3 install SpeechRecognition
-sudo pip3 install python-constraint
-sudo pip3 install easyAI
-sudo pip3 install NeuroLab
-sudo pip3 install gym
-sudo pip3 install deap
-sudo pip3 install keras
+sudo apt install python3 python3-pip  python3-opencv <br/>
+sudo pip3 install numpy sklearn <br/>
+sudo pip3 install pandas matplotlib <br/>
+sudo pip3 install pydotplus <br/>
+sudo pip3 install kanren sympy <br/>
+sudo pip3 install seaborn <br/>
+sudo pip3 install nltk <br/>
+sudo pip3 install gensim <br/>
+sudo pip3 install pattern <br/>
+sudo apt-get install mysql-server <br/>
+sudo apt-get install libmysqlclient-dev <br/>
+sudo apt-get install libmariadbclient-dev <br/>
+sudo pip3 install pattern <br/>
+sudo pip3 install hmmlearn <br/>
+sudo pip3 install pystruct <br/>
+sudo pip3 install cvxopt <br/>
+sudo pip3 install python_speech_features <br/>
+sudo pip3 install SpeechRecognition <br/>
+sudo pip3 install python-constraint <br/>
+sudo pip3 install easyAI <br/>
+sudo pip3 install NeuroLab <br/>
+sudo pip3 install gym <br/>
+sudo pip3 install deap <br/>
+sudo pip3 install keras <br/>
 
