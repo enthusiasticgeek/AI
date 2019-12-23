@@ -7,7 +7,9 @@ https://www.tutorialspoint.com/artificial_intelligence_with_python/artificial_in
 
 ## Packages (Ubuntu 18.04 LTS) :
 
-sudo apt install python3 python3-pip  python3-opencv <br/>
+sudo apt install python3 python3-pip python3-opencv python3-numpy<br/>
+sudo apt install python3-scipy python3-matplotlib ipython3 &ast;python3&ast;notebook python3-pandas<br/>
+sudo apt install python3-sympy python3-nose<br/>
 sudo apt-get install python3-tk
 sudo pip3 install numpy sklearn <br/>
 sudo pip3 install pandas matplotlib <br/>
